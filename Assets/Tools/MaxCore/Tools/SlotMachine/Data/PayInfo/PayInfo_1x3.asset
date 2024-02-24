@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91783735f718479494174a27f35793db, type: 3}
+  m_Name: PayInfo_1x3
+  m_EditorClassIdentifier: 
+  PayTableMap:
+    m_keys:
+    - symbolLevelType1: 1
+      symbolLevelType2: 1
+      symbolLevelType3: 1
+      symbolLevelType4: 0
+      symbolLevelType5: 0
+    - symbolLevelType1: 2
+      symbolLevelType2: 2
+      symbolLevelType3: 2
+      symbolLevelType4: 0
+      symbolLevelType5: 0
+    - symbolLevelType1: 3
+      symbolLevelType2: 3
+      symbolLevelType3: 3
+      symbolLevelType4: 0
+      symbolLevelType5: 0
+    - symbolLevelType1: 4
+      symbolLevelType2: 4
+      symbolLevelType3: 4
+      symbolLevelType4: 0
+      symbolLevelType5: 0
+    m_values: 01000000020000000300000004000000

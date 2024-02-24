@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ed6cc0f5204c23b265c0638575ff5d, type: 3}
+  m_Name: SlotAudioPath
+  m_EditorClassIdentifier: 
+  SlotAudioPathMap:
+    m_keys:
+    - SlotMove
+    - SlotStop
+    - Win
+    - Lose
+    m_values:
+    - {fileID: 8300000, guid: 979d3ca07d58f4dfda406a67de71eaf1, type: 3}
+    - {fileID: 8300000, guid: 719def96d9003443a88a24590f2c21f4, type: 3}
+    - {fileID: 8300000, guid: 66a3523208fbb4128a666b54eef5916b, type: 3}
+    - {fileID: 8300000, guid: c4aaf514f04014b699e5c46827b359b5, type: 3}

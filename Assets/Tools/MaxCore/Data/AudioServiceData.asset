@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c78c79d7ced379c419f77f4cf61b6e88, type: 3}
+  m_Name: AudioServiceData
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24100000, guid: 6d4e00a779206406aa829807acc3da4b, type: 2}
+  AudioTypeToMixerGroupMap:
+    m_keys: 000000000100000002000000
+    m_values:
+    - {fileID: 2831942118002501733, guid: 6d4e00a779206406aa829807acc3da4b, type: 2}
+    - {fileID: -1963187929819075534, guid: 6d4e00a779206406aa829807acc3da4b, type: 2}
+    - {fileID: 5706149522599948002, guid: 6d4e00a779206406aa829807acc3da4b, type: 2}

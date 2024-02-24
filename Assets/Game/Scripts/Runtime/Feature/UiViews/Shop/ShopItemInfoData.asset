@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b68bdd26b3e4defa659367f96252429, type: 3}
+  m_Name: ShopItemInfoData
+  m_EditorClassIdentifier: 
+  PathMap:
+    m_keys: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b000000
+    m_values:
+    - Skin: {fileID: 21300000, guid: 62ed03a0f49484cc9b351c94932bc027, type: 3}
+      Count: 0
+      Name: 
+    - Skin: {fileID: 21300000, guid: 96dac1c0281434ef2a3b893205af2804, type: 3}
+      Count: 100
+      Name: 
+    - Skin: {fileID: 21300000, guid: 3bf336fcca47f4a89aca6e73df75cb36, type: 3}
+      Count: 150
+      Name: 
+    - Skin: {fileID: 21300000, guid: 7e892380bd86f4e33b005e31b4aadd5f, type: 3}
+      Count: 200
+      Name: 
+    - Skin: {fileID: 21300000, guid: c0b280a2df90b4ca7a0f459a08df1331, type: 3}
+      Count: 250
+      Name: 
+    - Skin: {fileID: 21300000, guid: 3471e9d962a8c446b9f3067e78ee8362, type: 3}
+      Count: 300
+      Name: 
+    - Skin: {fileID: 21300000, guid: d5677b0358c95406588c9da114745876, type: 3}
+      Count: 350
+      Name: 
+    - Skin: {fileID: 21300000, guid: 335966a0ec53c47bbadebd9cda6167ec, type: 3}
+      Count: 400
+      Name: 
+    - Skin: {fileID: 21300000, guid: a442b4315bc0e4500aeeae0cde78a8f2, type: 3}
+      Count: 450
+      Name: 
+    - Skin: {fileID: 21300000, guid: bf61194fab9a9456590e9f9c1937edfb, type: 3}
+      Count: 500
+      Name: 
+    - Skin: {fileID: 21300000, guid: 150a9bb2463fe46599cb2795ee9fa35d, type: 3}
+      Count: 550
+      Name: 
+    - Skin: {fileID: 21300000, guid: faf38491f0e4841c998b80da9329f84a, type: 3}
+      Count: 600
+      Name: 

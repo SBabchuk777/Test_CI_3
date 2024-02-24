@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8193656202fb4540afae7c13a2b58f02, type: 3}
+  m_Name: ProjectAudioPath
+  m_EditorClassIdentifier: 
+  ProjectAudioPathMap:
+    m_keys: 000000000100000002000000030000000400000005000000
+    m_values:
+    - {fileID: 8300000, guid: 46846a3cf933645e69252a9f6c24f642, type: 3}
+    - {fileID: 8300000, guid: 51ec19046a4294b9a883b7f756a83908, type: 3}
+    - {fileID: 8300000, guid: 380d0abedd8c249dd8494b97292ef5b3, type: 3}
+    - {fileID: 8300000, guid: dcb636569feba48d98986df0f2f00935, type: 3}
+    - {fileID: 8300000, guid: a48ce0a50f481471685b4cd1be59ee19, type: 3}
+    - {fileID: 8300000, guid: cace03978b52c410caa40531e37c226c, type: 3}
