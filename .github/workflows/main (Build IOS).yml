@@ -84,12 +84,6 @@ jobs:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
 
-      ###########################
-      #         Test            #
-      ###########################
-      - name: List files in workspace directory
-        run: ls /Users/runner/work/Test_CI_2/Test_CI_2/build/iOS/iOS/
-
       ###########################################
       #  Fix File Permissions and Run fastlane  #
       ###########################################
