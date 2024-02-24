@@ -11,12 +11,22 @@ jobs:
   generate_certs:
     runs-on: macos-latest
     steps:
+      ##############
+      #  Checkout  #
+      ##############
       - uses: actions/checkout@v4
+
+      ################
+      #  Setup ruby  #
+      ################
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
 
+      ###########
+      #  Build  #
+      ###########
       - name: Build iOS
         shell: bash
         run: |

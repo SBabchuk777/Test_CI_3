@@ -6,12 +6,22 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
+      ##############
+      #  Checkout  #
+      ##############
       - uses: actions/checkout@v4
+
+      ################
+      #  Setup ruby  #
+      ################
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
           bundler-cache: true
 
+      ###############
+      #  Build iOS  #
+      ###############
       - name: Build iOS
         shell: bash
         run: |

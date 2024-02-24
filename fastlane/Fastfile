@@ -25,29 +25,27 @@ platform :ios do
       type: "appstore",
       storage_mode: "git",
       git_url: "git@github.com:#{match_org}/#{match_repo}.git",
-      app_identifier: ENV["IOS_BUNDLE_ID"]
+      app_identifier: ENV["IOS_BUNDLE_ID"],
+      readonly: false # Додати параметр readonly
     )
   end
 
   desc "Deliver a new Release build to the App Store"
   lane :release do
-    # Встановлення CocoaPods для проектів, які містять Podfile
-    cocoapods(
-      clean_install: true,
-      podfile: "#{ENV['IOS_BUILD_PATH']}/iOS/"
-    )
     build
-    upload_to_app_store
+    deliver
+    upload_to_app_store(
+      submit_for_review: false,
+      automatic_release: false,
+      force: true,
+      skip_screenshots: true,
+      run_precheck_before_submit: false
+    )
   end
 
   desc "Deliver a new Beta build to Apple TestFlight"
   lane :beta do
     # Missing Export Compliance can also be set through Deliverfile
-    # Встановлення CocoaPods для проектів, які містять Podfile
-    cocoapods(
-      clean_install: true,
-      podfile: "#{ENV['IOS_BUILD_PATH']}/iOS/"
-    )
     update_info_plist(
       xcodeproj: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       plist_path: 'Info.plist',
@@ -82,8 +80,8 @@ platform :ios do
       profile_uuid: ENV["sigh_#{ENV['IOS_BUNDLE_ID']}_appstore"]
     )
 
-   build_app(
-      workspace: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcworkspace",
+    build_app( #alias: gym
+      project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
       xcargs: '-allowProvisioningUpdates'
     )
