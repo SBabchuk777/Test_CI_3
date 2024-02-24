@@ -113,9 +113,6 @@ jobs:
           bundle exec fastlane ios beta
           #bundle exec fastlane ios build
 
-      - name: Show Gym log
-        run: cat /Users/runner/Library/Logs/gym/TestCI-Unity-iPhone.log
-
       ####################################
       #  Cleanup to avoid storage limit  #
       ####################################
