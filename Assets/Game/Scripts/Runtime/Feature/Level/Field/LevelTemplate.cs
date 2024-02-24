@@ -10,7 +10,6 @@ namespace Game.Scripts.Runtime.Feature.Level.Field
     {
         [SerializeField] private List<HoopHandler> _hoops;
         public List<Platform> Platforms;
-        public List<HoopHandler> Hoops => _hoops;
         
         public bool IsSetTemplate;
         
