@@ -84,6 +84,10 @@ jobs:
           name: Build-${{ matrix.targetPlatform }}
           path: build/${{ matrix.targetPlatform }}
 
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '13.4'
+
       ###########################################
       #  Fix File Permissions and Run fastlane  #
       ###########################################
