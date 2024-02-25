@@ -32,11 +32,7 @@ namespace Game.Scripts.Runtime.Feature.Level
 
         public void ContinueLevel()
         {
-            var spawnPosition = _fieldHandler.GetLastPlatform() + _yOffsetSpawnPosition;
-
-            _ballHandler.Respawn(spawnPosition);
-            
-            _fieldHandler.DeactivateHoopsUnderPlayer();
+            _ballHandler.Respawn(_fieldHandler.GetLastPlatform() + _yOffsetSpawnPosition);
             _levelHandler.Reset();
         }
     }
