@@ -89,7 +89,7 @@ platform :ios do
       project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
       xcargs: '-allowProvisioningUpdates',
-      destination: 'generic/platform=iOS,name=iPhone 12' #знову добавив
+      destination: 'generic/platform=iOS' # Виправити формат
     )
   end
 
