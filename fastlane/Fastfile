@@ -83,7 +83,8 @@ platform :ios do
     build_app( #alias: gym
       project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
-      xcargs: '-allowProvisioningUpdates'
+      xcargs: '-allowProvisioningUpdates',
+      xcode_version: "13.1" # Вставлений параметр для вказання версії Xcode
     )
   end
 
