@@ -1,3 +1,4 @@
+using Game.Scripts.Runtime.Feature.UiViews.Lose;
 using Tools.MaxCore.Scripts.Project.DI.ProjectInjector;
 using Tools.MaxCore.Scripts.Services.SceneLoaderService;
 using Tools.MaxCore.Scripts.Services.UIViewService;
@@ -13,7 +14,7 @@ namespace Game.Scripts.Runtime.Feature.UiViews.Pause
         [SerializeField] private Button _exitButton;
         
         [Inject] private UIViewService uiViewService;
-        [Inject] private SceneNavigation sceneNavigation;
+        [Inject] private LoseController loseController;
         protected override void Initialize()
         {
         }
@@ -24,7 +25,7 @@ namespace Game.Scripts.Runtime.Feature.UiViews.Pause
             _restartButton.onClick.AddListener(()=>
             {
                 DestroyView(0.8f);
-                sceneNavigation.LoadLevel();
+                loseController.ReloadGame();
             });
             _exitButton.onClick.AddListener(() => uiViewService.Instantiate(UIViewType.ExitPopUp, 1));
         }

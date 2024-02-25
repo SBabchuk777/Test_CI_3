@@ -43,6 +43,15 @@ namespace Game.Scripts.Runtime.Feature.Level.Field
                 .OrderBy(p => Vector2.Distance(_playerTransform.position, p.transform.position))
                 .FirstOrDefault()!.transform.position;
         }
+        
+        public void DeactivateHoopsUnderPlayer()
+        {
+            _templateOnLevel
+                .SelectMany(l => l.Hoops)
+                .Where(h => h.transform.position.y < _playerTransform.position.y)
+                .ToList()
+                .ForEach(h => h.gameObject.SetActive(false));
+        }
 
         private void Update()
         {
@@ -74,5 +83,7 @@ namespace Game.Scripts.Runtime.Feature.Level.Field
 
             _templateOnLevel.Add(instance);
         }
+
+        
     }
 }

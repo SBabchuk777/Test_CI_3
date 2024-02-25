@@ -572,7 +572,6 @@ GameObject:
   - component: {fileID: 4559776757620445112}
   - component: {fileID: 4559776757620445113}
   - component: {fileID: 4559776757620445114}
-  - component: {fileID: 3170979549776746211}
   m_Layer: 5
   m_Name: TermsButton
   m_TagString: Untagged
@@ -694,19 +693,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6343d02bcb914f858d39a3ab57ce99e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3170979549776746211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4559776757620445108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2191ac8ba472814cbfdb11cfefa1a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _policyOrTerms: 1
 --- !u!1 &4559776757698081184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +1057,6 @@ GameObject:
   - component: {fileID: 4591245406884001543}
   - component: {fileID: 2642132225702454959}
   - component: {fileID: 8769710048475798904}
-  - component: {fileID: 8315510433886546109}
   m_Layer: 5
   m_Name: PrivacyButton
   m_TagString: Untagged
@@ -1193,19 +1178,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6343d02bcb914f858d39a3ab57ce99e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8315510433886546109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4591245406884001537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2191ac8ba472814cbfdb11cfefa1a73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _policyOrTerms: 0
 --- !u!1 &4591245407387836318
 GameObject:
   m_ObjectHideFlags: 0

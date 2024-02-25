@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Game.Scripts.Runtime.Feature.UiViews.Lose;
 using Tools.MaxCore.Scripts.Project.DI.ProjectInjector;
 using Tools.MaxCore.Scripts.Services.SceneLoaderService;
 using Tools.MaxCore.Scripts.Services.UIViewService;
@@ -12,8 +13,9 @@ namespace Game.Scripts.Runtime.Feature.UiViews.Pause
         [SerializeField] private Button _yesButton;
         [SerializeField] private Button _noButton;
 
-        [Inject] private SceneNavigation sceneNavigation;
+        [Inject] private LoseController loseController;
         [Inject] private UIViewService uiViewService;
+        
         protected override void Initialize()
         {
         }
@@ -26,7 +28,7 @@ namespace Game.Scripts.Runtime.Feature.UiViews.Pause
 
         private void BackToMenu()
         {
-            sceneNavigation.LoadLobby();
+            loseController.BackToMenu();
             DOVirtual.DelayedCall(.8f, ()=>  uiViewService.RemoveAllViews()).Play();
         }
 
