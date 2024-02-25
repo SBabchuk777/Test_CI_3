@@ -3,7 +3,7 @@ match_org, match_repo = (ENV["MATCH_REPOSITORY"]||"").split("/")
 
 before_all do
   # Встановити і використати певну версію Xcode
-  xcversion(version: "14.2.0")
+  xcversion(version: "13.4.1")
 end
 
 platform :ios do
