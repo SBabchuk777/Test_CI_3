@@ -72,7 +72,6 @@ platform :ios do
       use_automatic_signing: true,
       path: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj"
     )
-
     update_code_signing_settings(
       use_automatic_signing: false,
       team_id: ENV["sigh_#{ENV['IOS_BUNDLE_ID']}_appstore_team-id"],
@@ -82,7 +81,6 @@ platform :ios do
       profile_name: ENV["sigh_#{ENV['IOS_BUNDLE_ID']}_appstore_profile-name"],
       profile_uuid: ENV["sigh_#{ENV['IOS_BUNDLE_ID']}_appstore"]
     )
-
     build_app( #alias: gym
       project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
