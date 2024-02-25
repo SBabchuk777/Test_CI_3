@@ -88,7 +88,8 @@ platform :ios do
     build_app( #alias: gym
       project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
-      xcargs: '-allowProvisioningUpdates'
+      xcargs: '-allowProvisioningUpdates',
+      destination: 'generic/platform=iOS,name=iPhone 12'' #знову добавив
     )
   end
 
