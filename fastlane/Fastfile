@@ -65,9 +65,7 @@ platform :ios do
   desc "Create .ipa"
   lane :build do
     setup_ci
-
     sync_certificates
-
     # Unity has specific requirements around codesigning that we have to handle
     # See https://github.com/fastlane/fastlane/discussions/17458 for context
     update_code_signing_settings(
