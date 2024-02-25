@@ -86,7 +86,7 @@ jobs:
 
       - uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '14.2.0'
+          xcode-version: '13.4.1'
 
       ###########################################
       #  Fix File Permissions and Run fastlane  #
