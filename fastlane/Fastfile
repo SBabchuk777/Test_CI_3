@@ -1,6 +1,11 @@
 org, repo = (ENV["GITHUB_REPOSITORY"]||"").split("/")
 match_org, match_repo = (ENV["MATCH_REPOSITORY"]||"").split("/")
 
+before_all do
+  # Встановити і використати певну версію Xcode
+  xcversion(version: "13.0")
+end
+
 platform :ios do
   lane :init_ci do
     github_action(
@@ -83,8 +88,7 @@ platform :ios do
     build_app( #alias: gym
       project: "#{ENV['IOS_BUILD_PATH']}/iOS/Unity-iPhone.xcodeproj",
       scheme: 'Unity-iPhone',
-      xcargs: '-allowProvisioningUpdates',
-      xcversion(version: "13.0") # Вставлений параметр для вказання версії Xcode
+      xcargs: '-allowProvisioningUpdates'
     )
   end
 
